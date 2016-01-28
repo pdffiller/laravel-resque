@@ -1,20 +1,20 @@
 {
-	"name": "awellis13/laravel-resque",
+	"name": "nikitash/laravel-resque",
 	"version": "1.2.2",
-	"description": "Laravel Resque connector for Queue.",
+	"description": "Laravel Resque connector for Queue Support Laravel 5.2.",
 	"keywords": ["laravel", "resque", "queue"],
 	"license": "MIT",
 	"authors": [
 		{
-			"name": "Andrew Ellis",
-			"email": "awellis@me.com"
+			"name": "Viktor Nikitash",
+			"email": "nikitashvictor@gmail.com"
 		}
 	],
 	"require": {
 		"php": ">=5.4.0",
 
-		"illuminate/config": "4.1.x",
-		"illuminate/queue": "4.1.x",
+		"illuminate/config": "5.2.x",
+		"illuminate/queue": "5.2.x",
 		"chrisboulton/php-resque": "dev-master"
 	},
 	"suggest": {
