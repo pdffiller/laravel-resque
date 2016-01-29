@@ -6,13 +6,14 @@ use ResqueScheduler;
 use Resque_Event;
 use Resque_Job_Status;
 use Illuminate\Queue\Queue;
+use Illuminate\Contracts\Queue\Queue as QueueContract;
 
 /**
  * Class ResqueQueue
  *
  * @package Resque
  */
-class ResqueQueue extends Queue {
+class ResqueQueue extends Queue implements QueueContract {
 
 	/**
 	 * Calls methods on the Resque and ResqueScheduler classes.
@@ -198,4 +199,16 @@ class ResqueQueue extends Queue {
 		return $queue ? : $this->default;
 	}
 
+	/**
+	 * Push a raw payload onto the queue.
+	 *
+	 * @param  string $payload
+	 * @param  string $queue
+	 * @param  array $options
+	 * @return mixed
+	 */
+	public function pushRaw($payload, $queue = null, array $options = [])
+	{
+		// TODO: Implement pushRaw() method.
+	}
 } // End ResqueQueue
