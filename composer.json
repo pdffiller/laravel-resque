@@ -15,7 +15,7 @@
 
 		"illuminate/config": "5.2.x",
 		"illuminate/queue": "5.2.x",
-		"chrisboulton/php-resque": "dev-master"
+		"chrisboulton/php-resque": "dev-master@dev"
 	},
 	"suggest": {
 		"chrisboulton/php-resque-scheduler": "Enables the use of the ResqueScheduler functionality."
