@@ -1,5 +1,5 @@
 {
-	"name": "nikitash/laravel-resque",
+	"name": "pdffiller/laravel-resque",
 	"version": "1.2.2",
 	"description": "Laravel Resque connector for Queue Support Laravel 5.2.",
 	"keywords": ["laravel", "resque", "queue"],
