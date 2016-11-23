@@ -15,7 +15,7 @@
 
 		"illuminate/config": "5.3.x",
 		"illuminate/queue": "5.3.x",
-		"chrisboulton/php-resque": "dev-master@dev"
+		"pdffiller/php-resque": "1.3"
 	},
 	"suggest": {
 		"chrisboulton/php-resque-scheduler": "Enables the use of the ResqueScheduler functionality."
@@ -25,5 +25,11 @@
 			"Awellis13\\Resque": "src/"
 		}
 	},
-	"minimum-stability": "dev"
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "git@github.com:pdffiller/php-resque.git"
+		}
+	],
+	"minimum-stability": "stable"
 }
