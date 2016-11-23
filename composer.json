@@ -1,6 +1,6 @@
 {
 	"name": "pdffiller/laravel-resque",
-	"version": "1.3",
+	"version": "1.3.2",
 	"description": "Laravel Resque connector for Queue Support Laravel 5.3.",
 	"keywords": ["laravel", "resque", "queue"],
 	"license": "MIT",
