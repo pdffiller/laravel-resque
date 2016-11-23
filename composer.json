@@ -1,7 +1,7 @@
 {
 	"name": "pdffiller/laravel-resque",
-	"version": "1.2.2",
-	"description": "Laravel Resque connector for Queue Support Laravel 5.2.",
+	"version": "1.3",
+	"description": "Laravel Resque connector for Queue Support Laravel 5.3.",
 	"keywords": ["laravel", "resque", "queue"],
 	"license": "MIT",
 	"authors": [
@@ -11,11 +11,11 @@
 		}
 	],
 	"require": {
-		"php": ">=5.4.0",
+		"php": ">=5.6.4",
 
-		"illuminate/config": "5.2.x",
-		"illuminate/queue": "5.2.x",
-		"chrisboulton/php-resque": "dev-master@dev"
+		"illuminate/config": "5.3.x",
+		"illuminate/queue": "5.3.x",
+		"chrisboulton/php-resque": "1.2"
 	},
 	"suggest": {
 		"chrisboulton/php-resque-scheduler": "Enables the use of the ResqueScheduler functionality."
@@ -25,5 +25,5 @@
 			"Awellis13\\Resque": "src/"
 		}
 	},
-	"minimum-stability": "dev"
+	"minimum-stability": "stable"
 }
