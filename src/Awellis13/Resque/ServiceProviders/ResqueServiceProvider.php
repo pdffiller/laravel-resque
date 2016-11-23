@@ -26,7 +26,7 @@ class ResqueServiceProvider extends QueueServiceProvider {
 	 */
 	public function boot()
 	{
-		parent::boot();
+		parent::register();
 
 		$this->registerCommand();
 	}
