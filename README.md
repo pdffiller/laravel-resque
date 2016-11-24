@@ -4,9 +4,9 @@ This package allows you to connect to Resque when using `Queue`.
 
 ## Requirements
 
-- PHP 5.4+
-- Illuminate\Config 4.1+
-- Illuminate\Queue 4.1+
+- PHP 5.6.4+
+- Illuminate\Config 5.3+
+- Illuminate\Queue 5.3+
 - Resque 1.2
 - ResqueScheduler 1.1 (Optional)
 
@@ -15,8 +15,14 @@ This package allows you to connect to Resque when using `Queue`.
 First you need to add the following to your project's `composer.json`:
 
     "require": {
-    	"awellis13/laravel-resque": "1.2.x"
-    }
+    	"pdffiller/laravel-resque": "^1.3"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:pdffiller/laravel-resque.git"
+        },
+    ]
 
 Now you need to run the following to install the package:
 
@@ -56,6 +62,10 @@ If you choose to not use this driver as your default Queue driver you can call a
 
 	$when = time() + 3600; // 1 hour from now
 	Queue::later($when, 'JobName', ['name' => 'Andrew']);
+	
+### Run console queue listener
+
+	php artisan resque:listen --queue=*
 
 ## Further Documentation
 
