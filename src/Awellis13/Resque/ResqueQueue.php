@@ -211,4 +211,15 @@ class ResqueQueue extends Queue implements QueueContract {
 	{
 		// TODO: Implement pushRaw() method.
 	}
+
+	/**
+	 * Get the size of the queue.
+	 *
+	 * @param  string $queue
+	 * @return int
+	 */
+	public function size($queue = null)
+	{
+		// TODO: Implement size() method.
+	}
 } // End ResqueQueue
