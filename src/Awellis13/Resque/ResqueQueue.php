@@ -15,6 +15,8 @@ use Illuminate\Contracts\Queue\Queue as QueueContract;
  */
 class ResqueQueue extends Queue implements QueueContract {
 
+    protected $default;
+
 	/**
 	 * Calls methods on the Resque and ResqueScheduler classes.
 	 *
@@ -105,7 +107,7 @@ class ResqueQueue extends Queue implements QueueContract {
 	 * Pop the next job off of the queue.
 	 *
 	 * @param string $queue
-	 * @return \Illuminate\Queue\Jobs\Job|null
+	 * @return \Illuminate\Contracts\Queue\Job|null|array
 	 */
 	public function pop($queue = NULL)
 	{
