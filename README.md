@@ -7,15 +7,15 @@ This package allows you to connect to Resque when using `Queue`.
 - PHP 5.6.4+
 - Illuminate\Config 5.3+
 - Illuminate\Queue 5.3+
-- Resque 1.2
-- ResqueScheduler 1.1 (Optional)
+- Resque 1.5+
+- ResqueScheduler 1.4+ (Optional)
 
 ## Installation
 
 First you need to add the following to your project's `composer.json`:
 
     "require": {
-    	"pdffiller/laravel-resque": "^1.3"
+    	"pdffiller/laravel-resque": "^1.4"
     },
     "repositories": [
         {
@@ -69,8 +69,8 @@ If you choose to not use this driver as your default Queue driver you can call a
 
 ## Further Documentation
 
-- [PHP-Resque](https://github.com/chrisboulton/php-resque)
-- [PHP-Resque-Scheduler](https://github.com/chrisboulton/php-resque-scheduler)
+- [PHP-Resque](https://github.com/pdffiller/php-resque)
+- [PHP-Resque-Scheduler](https://github.com/pdffiller/php-resque-scheduler)
 
 ## License
 
