@@ -38,6 +38,13 @@ Now you need to add the following to your `/app/config/queue.php` "connections" 
     	"driver" => "resque"
     ]
 
+To provide custom redis connection use config key `connection`:
+
+        "resque" => [
+        	"driver" => "resque",
+        	"connection" => "{custom redis connection name from config database.redis}"
+        ]
+
 If you wish to use this driver as your default Queue driver you will need to set the following as your "default" drive in `app/config/queue.php`:
 
     "default" => "resque",
